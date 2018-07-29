@@ -1,0 +1,33 @@
+@import './animate'
+
+.settings-item_transition-enter {
+  opacity: 0.01;
+}
+
+.settings-item_transition-enter.settings-item_transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.settings-item_transition-leave {
+  opacity: 1;
+}
+
+.settings-item_transition-leave.settings-item_transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+
+.settings-item_content {
+  border 1px solid lightgray
+}
+.settings-item {
+  text-align left
+  margin-left 25px
+  margin-top 50px
+  border-bottom 1px solid lightgray
+  line-height 50px
+}
+.settings-item_successMsgs
+  margin-left 15px
+  @extend .showDown
